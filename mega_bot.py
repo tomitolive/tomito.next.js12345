@@ -878,6 +878,38 @@ def create_page(item_data, media_type, is_trend=False):
     with open(path, 'w', encoding='utf-8') as f:
         f.write(html)
 
+    # ── Next.js JSON Store Integration ────────────────────────────────────────
+    content_dir = os.path.join(BASE_PATH, 'data', 'content')
+    os.makedirs(content_dir, exist_ok=True)
+    json_path = os.path.join(content_dir, f"{tmdb_id}.json")
+    
+    content_data = {
+        "id": tmdb_id,
+        "title": title_ar,
+        "title_ar": title_ar,
+        "title_en": title_en,
+        "slug": slug,
+        "overview": data.get('overview', ''),
+        "poster_path": poster_path,
+        "backdrop_path": data.get('backdrop_path'),
+        "release_date": data.get('release_date') or data.get('first_air_date'),
+        "vote_average": rating,
+        "vote_count": rating_count,
+        "genres": ar.get('genres', []) if ar else [],
+        "ai_content": {
+            "intro": page_intro,
+            "desc_ar": desc_ar,
+            "meta_desc": meta_desc,
+            "outro": page_outro,
+            "opinion": tomito_opinion,
+            "faq": (tri or {}).get('faq', []),
+            "keywords": keywords
+        }
+    }
+    with open(json_path, 'w', encoding='utf-8') as f:
+        json.dump(content_data, f, ensure_ascii=False, indent=2)
+    log.info(f"✅ JSON store updated: {json_path}")
+
     # ── Live Google Indexing ──────────────────────────────────────────────────
     try:
         print(f"🚀 [INDEXING] Sending new page to Google: {page_url}")
