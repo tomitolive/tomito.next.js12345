@@ -107,10 +107,12 @@ def _call_llm(system_msg, user_msg):
                     text = data['message']['content'][0]['text']
                     return re.sub(r'```json\s*|\s*```', '', text).strip()
                 return None
-            elif res.status_code == 429:
-                log.warning(f"⚠️ Rate limit hit on key index {_current_key_idx}. Switching to next key...")
+            elif res.status_code in (401, 429, 500, 502, 503, 504):
+                reason = "Rate limit" if res.status_code == 429 else f"Error ({res.status_code})"
+                log.warning(f"⚠️ {reason} hit on key index {_current_key_idx}. Switching to next key...")
                 _current_key_idx = (_current_key_idx + 1) % len(COHERE_KEYS)
-                time.sleep(2)
+                if res.status_code == 429 or res.status_code >= 500:
+                    time.sleep(2)
                 continue
             else:
                 log.error(f"Cohere Error {res.status_code}: {res.text[:300]}")

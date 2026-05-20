@@ -1,0 +1,101 @@
+/* ====== LAYOUT COMPONENTS ====== */
+
+/* --- Navbar (Next.js) --- */
+.navbar {
+  position: fixed;
+  top: 0; left: 0; right: 0;
+  z-index: 1000;
+  height: 64px;
+  display: flex;
+  align-items: center;
+  padding: 0 1.5rem;
+  background: linear-gradient(to bottom, rgba(6, 11, 25, 0.95) 0%, rgba(6, 11, 25, 0.6) 70%, transparent 100%);
+  transition: var(--transition);
+}
+
+.navbar.scrolled {
+  background: rgba(6, 11, 25, 0.97);
+  backdrop-filter: blur(20px) saturate(1.8);
+  border-bottom: 1px solid var(--glass-border);
+}
+
+/* --- Two Tier Header (Static) --- */
+.tomito-header {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  width: 100%;
+}
+
+.top-bar {
+  background-color: var(--primary);
+  height: 48px;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+}
+
+.bottom-bar {
+  background-color: var(--card-bg);
+  height: 80px;
+  display: flex;
+  align-items: center;
+  border-bottom: 2px solid var(--primary);
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+/* --- Hero Section --- */
+.hero-gradient-overlay {
+  background:
+    linear-gradient(0deg,   var(--bg) 0%, transparent 50%),
+    linear-gradient(90deg,  var(--bg) 0%, transparent 60%),
+    linear-gradient(180deg, rgba(8,12,26,0.5) 0%, transparent 20%);
+}
+
+.hero-title {
+  text-shadow: 0 4px 20px rgba(0,0,0,0.7), 0 1px 3px rgba(0,0,0,0.9);
+}
+
+/* --- Section Header --- */
+.section-header {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.section-header::before {
+  content: '';
+  width: 4px;
+  height: 1.5rem;
+  background: var(--primary);
+  border-radius: 4px;
+  box-shadow: 0 0 12px var(--primary-glow);
+}
+
+/* --- Footer --- */
+.premium-footer, .footer {
+  padding: 4rem 1.5rem;
+  border-top: 1px solid var(--glass-border);
+  background: linear-gradient(to top, #040816, var(--bg));
+  text-align: center;
+}
+
+.footer-logo {
+  font-size: 1.8rem;
+  font-weight: 900;
+  color: var(--primary);
+  letter-spacing: -0.04em;
+  margin-bottom: 0.75rem;
+  filter: drop-shadow(0 0 10px var(--primary-glow));
+}

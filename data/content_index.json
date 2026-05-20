@@ -29,9 +29,9 @@
   },
   {
     "title": "الرجل الحديدي ٢ / Iron Man 2",
-    "poster": "https://image.tmdb.org/t/p/w500/yhQxDrmpgJiiTuT76ulq5BTpq43.jpg",
-    "rating": "",
-    "year": "",
+    "poster": "/t/p/w500/yhQxDrmpgJiiTuT76ulq5BTpq43.jpg",
+    "rating": 6.9,
+    "year": "2010",
     "genres": [
       "مغامرة",
       "حركة",
@@ -39,13 +39,23 @@
     ],
     "folder": "movie",
     "slug": "10138-iron-man-2",
-    "tmdb_id": 10138
+    "tmdb_id": 10138,
+    "title_ar": "الرجل الحديدي ٢",
+    "title_en": "Iron Man 2",
+    "type": "movie",
+    "genre_ids": [
+      12,
+      28,
+      878
+    ],
+    "timestamp": 1779311786,
+    "fixed": true
   },
   {
-    "title": "องค์บาก / Ong-Bak",
-    "poster": "https://image.tmdb.org/t/p/w500/jOsQwJ1x422i33BynRFtFxyK521.jpg",
-    "rating": "",
-    "year": "",
+    "title": "Ong-Bak / Ong-Bak",
+    "poster": "/t/p/w500/jOsQwJ1x422i33BynRFtFxyK521.jpg",
+    "rating": 7.1,
+    "year": "2003",
     "genres": [
       "องค์บาก كامل",
       "حركة",
@@ -53,13 +63,23 @@
     ],
     "folder": "movie",
     "slug": "9316-ong-bak",
-    "tmdb_id": 9316
+    "tmdb_id": 9316,
+    "title_ar": "Ong-Bak",
+    "title_en": "Ong-Bak",
+    "type": "movie",
+    "genre_ids": [
+      28,
+      80,
+      53
+    ],
+    "timestamp": 1779311799,
+    "fixed": true
   },
   {
     "title": "Curral de Mulheres / Amazon Jail",
-    "poster": "https://image.tmdb.org/t/p/w500/z8WoJGqbHGxEAMZhPO5SXyKrbT6.jpg",
-    "rating": "",
-    "year": "",
+    "poster": "/t/p/w500/z8WoJGqbHGxEAMZhPO5SXyKrbT6.jpg",
+    "rating": 4.3,
+    "year": "1982",
     "genres": [
       "إثارة",
       "مغامرة",
@@ -67,13 +87,23 @@
     ],
     "folder": "movie",
     "slug": "80785-amazon-jail",
-    "tmdb_id": 80785
+    "tmdb_id": 80785,
+    "title_ar": "Curral de Mulheres",
+    "title_en": "Amazon Jail",
+    "type": "movie",
+    "genre_ids": [
+      53,
+      12,
+      28
+    ],
+    "timestamp": 1779311809,
+    "fixed": true
   },
   {
     "title": "نكرة ٢ / Nobody 2",
-    "poster": "https://image.tmdb.org/t/p/w500/A8LzSoPiWmrpduCRRY1sOQQEDsQ.jpg",
-    "rating": "",
-    "year": "",
+    "poster": "/t/p/w500/A8LzSoPiWmrpduCRRY1sOQQEDsQ.jpg",
+    "rating": 6.9,
+    "year": "2025",
     "genres": [
       "نكرة ٢ كامل",
       "حركة",
@@ -81,13 +111,23 @@
     ],
     "folder": "movie",
     "slug": "1007734-nobody-2",
-    "tmdb_id": 1007734
+    "tmdb_id": 1007734,
+    "title_ar": "نكرة ٢",
+    "title_en": "Nobody 2",
+    "type": "movie",
+    "genre_ids": [
+      28,
+      53,
+      35
+    ],
+    "timestamp": 1779311821,
+    "fixed": true
   },
   {
     "title": "Srpski film / A Serbian Film",
-    "poster": "https://image.tmdb.org/t/p/w500/qT312t40YmlOSsOXOoOLDCvRbPx.jpg",
-    "rating": "",
-    "year": "",
+    "poster": "/t/p/w500/qT312t40YmlOSsOXOoOLDCvRbPx.jpg",
+    "rating": 5.4,
+    "year": "2010",
     "genres": [
       "جريمة",
       "رعب",
@@ -95,13 +135,23 @@
     ],
     "folder": "movie",
     "slug": "73861-a-serbian-film",
-    "tmdb_id": 73861
+    "tmdb_id": 73861,
+    "title_ar": "Srpski film",
+    "title_en": "A Serbian Film",
+    "type": "movie",
+    "genre_ids": [
+      80,
+      27,
+      53
+    ],
+    "timestamp": 1779311833,
+    "fixed": true
   },
   {
-    "title": "扫恶 / Crush The Wicked",
-    "poster": "https://image.tmdb.org/t/p/w500/xDFlWTgY60FiBW1QiGbm1KwwBd7.jpg",
-    "rating": "",
-    "year": "",
+    "title": "Crush The Wicked / Crush The Wicked",
+    "poster": "/t/p/w500/xDFlWTgY60FiBW1QiGbm1KwwBd7.jpg",
+    "rating": 7.0,
+    "year": "2026",
     "genres": [
       "扫恶 كامل",
       "حركة",
@@ -109,13 +159,22 @@
     ],
     "folder": "movie",
     "slug": "1654429-crush-the-wicked",
-    "tmdb_id": 1654429
+    "tmdb_id": 1654429,
+    "title_ar": "Crush The Wicked",
+    "title_en": "Crush The Wicked",
+    "type": "movie",
+    "genre_ids": [
+      28,
+      80
+    ],
+    "timestamp": 1779311846,
+    "fixed": true
   },
   {
-    "title": "誤判 / The Prosecutor",
-    "poster": "https://image.tmdb.org/t/p/w500/2tH6utnYvlTpGvbQCs5FdeQIKFp.jpg",
-    "rating": "",
-    "year": "",
+    "title": "The Prosecutor / The Prosecutor",
+    "poster": "/t/p/w500/lTSOwjX2pVynL06MGhxgAnvH4Z2.jpg",
+    "rating": 7.0,
+    "year": "2024",
     "genres": [
       "دراما",
       "جريمة",
@@ -123,13 +182,24 @@
     ],
     "folder": "movie",
     "slug": "1128650-the-prosecutor",
-    "tmdb_id": 1128650
+    "tmdb_id": 1128650,
+    "title_ar": "The Prosecutor",
+    "title_en": "The Prosecutor",
+    "type": "movie",
+    "genre_ids": [
+      28,
+      18,
+      80,
+      53
+    ],
+    "timestamp": 1779311856,
+    "fixed": true
   },
   {
-    "title": "الولد القديم / Oldboy",
-    "poster": "https://image.tmdb.org/t/p/w500/29a5z1V42FXK1zHNqxYdCqfc8N3.jpg",
-    "rating": "",
-    "year": "",
+    "title": "الفتى العجوز / Oldboy",
+    "poster": "/t/p/w500/29a5z1V42FXK1zHNqxYdCqfc8N3.jpg",
+    "rating": 8.2,
+    "year": "2003",
     "genres": [
       "إثارة",
       "غموض",
@@ -137,13 +207,24 @@
     ],
     "folder": "movie",
     "slug": "670-oldboy",
-    "tmdb_id": 670
+    "tmdb_id": 670,
+    "title_ar": "الفتى العجوز",
+    "title_en": "Oldboy",
+    "type": "movie",
+    "genre_ids": [
+      18,
+      53,
+      9648,
+      28
+    ],
+    "timestamp": 1779311920,
+    "fixed": true
   },
   {
     "title": "قيادة / Drive",
-    "poster": "https://image.tmdb.org/t/p/w500/31opsfgzNFOmT8TWM5zuk9mFU53.jpg",
-    "rating": "",
-    "year": "",
+    "poster": "/t/p/w500/31opsfgzNFOmT8TWM5zuk9mFU53.jpg",
+    "rating": 7.6,
+    "year": "2011",
     "genres": [
       "دراما",
       "إثارة",
@@ -151,13 +232,23 @@
     ],
     "folder": "movie",
     "slug": "64690-drive",
-    "tmdb_id": 64690
+    "tmdb_id": 64690,
+    "title_ar": "قيادة",
+    "title_en": "Drive",
+    "type": "movie",
+    "genre_ids": [
+      18,
+      53,
+      80
+    ],
+    "timestamp": 1779311983,
+    "fixed": true
   },
   {
-    "title": "Turbulence",
-    "poster": "https://image.tmdb.org/t/p/w500/jRuiKL4S9UpLma2ZlM47xIu2gbe.jpg",
-    "rating": "",
-    "year": "",
+    "title": "Turbulence / Turbulence",
+    "poster": "/t/p/w500/jRuiKL4S9UpLma2ZlM47xIu2gbe.jpg",
+    "rating": 6.7,
+    "year": "2025",
     "genres": [
       "مغامرة",
       "دراما",
@@ -165,13 +256,25 @@
     ],
     "folder": "movie",
     "slug": "1401778-turbulence",
-    "tmdb_id": 1401778
+    "tmdb_id": 1401778,
+    "title_ar": "Turbulence",
+    "title_en": "Turbulence",
+    "type": "movie",
+    "genre_ids": [
+      53,
+      28,
+      12,
+      18,
+      14
+    ],
+    "timestamp": 1779312038,
+    "fixed": true
   },
   {
     "title": "بالرينا / Ballerina",
-    "poster": "https://image.tmdb.org/t/p/w500/d0g7NgTjYHkfqFP0p4eGL9e0w1F.jpg",
-    "rating": "",
-    "year": "",
+    "poster": "/t/p/w500/d0g7NgTjYHkfqFP0p4eGL9e0w1F.jpg",
+    "rating": 7.2,
+    "year": "2025",
     "genres": [
       "حركة",
       "إثارة",
@@ -179,13 +282,23 @@
     ],
     "folder": "movie",
     "slug": "541671-ballerina",
-    "tmdb_id": 541671
+    "tmdb_id": 541671,
+    "title_ar": "بالرينا",
+    "title_en": "Ballerina",
+    "type": "movie",
+    "genre_ids": [
+      28,
+      53,
+      80
+    ],
+    "timestamp": 1779312144,
+    "fixed": true
   },
   {
     "title": "حكاية لعبة 3 / Toy Story 3",
-    "poster": "https://image.tmdb.org/t/p/w500/jV4eWv8jPH5uLa5yNUfRqWdWZTG.jpg",
-    "rating": "",
-    "year": "",
+    "poster": "/t/p/w500/jV4eWv8jPH5uLa5yNUfRqWdWZTG.jpg",
+    "rating": 7.8,
+    "year": "2010",
     "genres": [
       "رسوم متحركة",
       "عائلي",
@@ -193,13 +306,23 @@
     ],
     "folder": "movie",
     "slug": "10193-toy-story-3",
-    "tmdb_id": 10193
+    "tmdb_id": 10193,
+    "title_ar": "حكاية لعبة 3",
+    "title_en": "Toy Story 3",
+    "type": "movie",
+    "genre_ids": [
+      16,
+      10751,
+      35
+    ],
+    "timestamp": 1779312158,
+    "fixed": true
   },
   {
     "title": "ترون: آريس / TRON: Ares",
-    "poster": "https://image.tmdb.org/t/p/w500/ird8cun3DvW33ruCWmuz18xWdAl.jpg",
-    "rating": "",
-    "year": "",
+    "poster": "/t/p/w500/ird8cun3DvW33ruCWmuz18xWdAl.jpg",
+    "rating": 6.5,
+    "year": "2025",
     "genres": [
       "خيال علمي",
       "مغامرة",
@@ -207,13 +330,23 @@
     ],
     "folder": "movie",
     "slug": "533533-tron-ares",
-    "tmdb_id": 533533
+    "tmdb_id": 533533,
+    "title_ar": "ترون: آريس",
+    "title_en": "TRON: Ares",
+    "type": "movie",
+    "genre_ids": [
+      878,
+      12,
+      28
+    ],
+    "timestamp": 1779312174,
+    "fixed": true
   },
   {
-    "title": "Worldbreaker",
-    "poster": "https://image.tmdb.org/t/p/w500/4xx25oYs08myEelHiSbOuVi80Ki.jpg",
-    "rating": "",
-    "year": "",
+    "title": "Worldbreaker / Worldbreaker",
+    "poster": "/t/p/w500/ahj1JU8r0uJv7QII5Uj7tKzbEsC.jpg",
+    "rating": 5.9,
+    "year": "2025",
     "genres": [
       "خيال علمي",
       "حركة",
@@ -221,13 +354,23 @@
     ],
     "folder": "movie",
     "slug": "1196067-worldbreaker",
-    "tmdb_id": 1196067
+    "tmdb_id": 1196067,
+    "title_ar": "Worldbreaker",
+    "title_en": "Worldbreaker",
+    "type": "movie",
+    "genre_ids": [
+      878,
+      28,
+      27
+    ],
+    "timestamp": 1779312187,
+    "fixed": true
   },
   {
-    "title": "Godzilla Minus One",
-    "poster": "https://image.tmdb.org/t/p/w500/hqkOUzMuCdxCDAYRUuoHDPa0qqu.jpg",
-    "rating": "",
-    "year": "",
+    "title": "Godzilla Minus One / Godzilla Minus One",
+    "poster": "/t/p/w500/hqkOUzMuCdxCDAYRUuoHDPa0qqu.jpg",
+    "rating": 7.6,
+    "year": "2023",
     "genres": [
       "خيال علمي",
       "رعب",
@@ -235,7 +378,17 @@
     ],
     "folder": "movie",
     "slug": "940721-godzilla-minus-one",
-    "tmdb_id": 940721
+    "tmdb_id": 940721,
+    "title_ar": "Godzilla Minus One",
+    "title_en": "Godzilla Minus One",
+    "type": "movie",
+    "genre_ids": [
+      878,
+      27,
+      28
+    ],
+    "timestamp": 1779312200,
+    "fixed": true
   },
   {
     "title": "غول الجبل 2 / Troll 2",

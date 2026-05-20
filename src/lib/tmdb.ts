@@ -15,11 +15,12 @@ export async function getTMDBData(endpoint: string, params: Record<string, strin
 }
 
 export async function getDetails(id: string, type: "movie" | "tv") {
-  const [ar, en, credits, similar] = await Promise.all([
+  const [ar, en, credits, similar, videos] = await Promise.all([
     getTMDBData(`${type}/${id}`, { language: "ar" }),
     getTMDBData(`${type}/${id}`, { language: "en" }),
     getTMDBData(`${type}/${id}/credits`),
     getTMDBData(`${type}/${id}/similar`, { language: "ar" }),
+    getTMDBData(`${type}/${id}/videos`),
   ]);
-  return { ar, en, credits, similar };
+  return { ar, en, credits, similar, videos };
 }

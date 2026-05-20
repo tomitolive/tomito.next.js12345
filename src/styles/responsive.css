@@ -1,0 +1,119 @@
+/* ====== RESPONSIVE DESIGN ====== */
+
+@media (max-width: 1200px) {
+  .header-container { padding: 0 2rem; }
+  .grid { grid-template-columns: repeat(auto-fill, minmax(160px, 1fr)); gap: 1.5rem; }
+}
+
+@media (max-width: 1024px) {
+  .hero-title { font-size: 4rem; }
+  .grid { grid-template-columns: repeat(auto-fill, minmax(140px, 1fr)); }
+}
+
+@media (max-width: 768px) {
+  .navbar { height: 60px !important; padding: 0 1rem !important; }
+  .top-bar { display: none !important; }
+  .bottom-bar { height: auto !important; padding: 1rem 0 !important; }
+  .header-container { flex-direction: column !important; gap: 1rem !important; }
+  
+  /* Force Grid to Stack */
+  .grid {
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 2rem !important;
+  }
+
+  .lg\:col-span-8, .lg\:col-span-4, .lg\:col-span-12 {
+    width: 100% !important;
+    grid-column: span 1 / span 1 !important;
+  }
+
+  /* Hero Height Fix for Mobile - Flexible instead of fixed */
+  .hero-section-container {
+    height: auto !important;
+    min-height: 80vh !important;
+    padding-bottom: 5rem !important;
+  }
+  
+  .hero-title { 
+    font-size: 2.2rem !important; 
+    line-height: 1.1 !important; 
+    margin-bottom: 1.5rem !important; 
+    text-align: center !important;
+    width: 100% !important;
+  }
+  
+  .hero-gradient-overlay { 
+    background: linear-gradient(0deg, var(--bg) 15%, rgba(0,0,0,0.5) 100%) !important; 
+  }
+  
+  /* Stack Buttons on Mobile */
+  .flex-wrap.gap-4 {
+    display: flex !important;
+    flex-direction: column !important;
+    width: 100% !important;
+    gap: 1rem !important;
+    margin-bottom: 2rem !important;
+  }
+
+  .btn-primary, .btn-secondary {
+    width: 100% !important;
+    justify-content: center !important;
+    padding: 1.1rem !important;
+    font-size: 1.1rem !important;
+    margin: 0 !important;
+  }
+  
+  /* Container Padding Fix */
+  .content-section-wrapper {
+    padding-left: 1rem !important;
+    padding-right: 1rem !important;
+    margin-top: -4rem !important;
+    display: flex !important;
+    flex-direction: column !important;
+  }
+  
+  /* Similar Movies Grid */
+  .netflix-row {
+    padding-bottom: 2rem !important;
+  }
+  
+  .series-poster { width: 100% !important; max-width: 240px !important; margin: 0 auto !important; }
+
+  /* Division Refinement for Mobile */
+  .page-division {
+    padding: 2rem 0.5rem !important;
+    width: 100% !important;
+    border-radius: 0 !important;
+  }
+  
+  .division-header {
+    margin-bottom: 1.5rem !important;
+    justify-content: center !important;
+  }
+
+  .division-header h2 {
+    font-size: 1.4rem !important;
+  }
+
+  /* Breadcrumb visibility */
+  .breadcrumb {
+    justify-content: center !important;
+    text-align: center !important;
+    font-size: 0.8rem !important;
+    width: 100% !important;
+  }
+}
+
+@media (max-width: 480px) {
+  .grid { grid-template-columns: repeat(2, 1fr); gap: 0.5rem; }
+  .hero-title { font-size: 1.8rem; }
+  .section-header h2 { font-size: 1.1rem; }
+  .card-info { padding: 1rem 0.5rem 0.5rem; }
+
+  /* Ensure no horizontal scroll */
+  body {
+    width: 100vw;
+    overflow-x: hidden;
+  }
+}

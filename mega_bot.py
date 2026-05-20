@@ -874,9 +874,9 @@ def create_page(item_data, media_type, is_trend=False):
         html = html.replace(k, str(v))
 
 
-    path = os.path.join(BASE_PATH, folder, f"{slug}.html")
-    with open(path, 'w', encoding='utf-8') as f:
-        f.write(html)
+    # path = os.path.join(BASE_PATH, folder, f"{slug}.html")
+    # with open(path, 'w', encoding='utf-8') as f:
+    #     f.write(html)
 
     # ── Next.js JSON Store Integration ────────────────────────────────────────
     content_dir = os.path.join(BASE_PATH, 'data', 'content')
@@ -904,7 +904,8 @@ def create_page(item_data, media_type, is_trend=False):
             "opinion": tomito_opinion,
             "faq": (tri or {}).get('faq', []),
             "keywords": keywords
-        }
+        },
+        "fixed": True
     }
     with open(json_path, 'w', encoding='utf-8') as f:
         json.dump(content_data, f, ensure_ascii=False, indent=2)
@@ -931,7 +932,8 @@ def create_page(item_data, media_type, is_trend=False):
         'type': media_type,
         'tmdb_id': tmdb_id,
         'genre_ids': g_ids,
-        'timestamp': int(time.time())
+        'timestamp': int(time.time()),
+        'fixed': True
     }
     return f"{folder}/{slug}", index_entry
 
@@ -1181,8 +1183,8 @@ def build_listing_pages():
             with open(os.path.join(tv_idx_dir, "index.html"), 'w', encoding='utf-8') as f:
                 f.write(render_list(mission['label'], filtered[::-1], "tv"))
 
-        with open(os.path.join(genre_dir, f"{slug}.html"), 'w', encoding='utf-8') as f:
-            f.write(render_list(mission['label'], filtered[::-1], f"genre/{slug}"))
+    # with open(os.path.join(genre_dir, f"{slug}.html"), 'w', encoding='utf-8') as f:
+    #     f.write(render_list(mission['label'], filtered[::-1], f"genre/{slug}"))
 
     print("✅ Listing pages generated.")
 
