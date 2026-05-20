@@ -55,7 +55,7 @@ export default function Search() {
         value={query}
         onChange={(e) => handleSearch(e.target.value)}
         placeholder="ابحث عن فيلم أو مسلسل..."
-        className="w-full bg-zinc-900/80 border border-white/10 rounded-full py-2 px-10 text-sm focus:outline-none focus:border-red-primary focus:ring-1 focus:ring-red-primary/30 transition-all placeholder:text-gray-500"
+        className="w-full bg-input border border-white/5 rounded-full py-2.5 px-10 text-sm focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary/30 transition-all placeholder:text-gray-600"
       />
       <div className="absolute left-3 top-1/2 -translate-y-1/2 text-gray-400">
         <svg width="18" height="18" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -64,15 +64,15 @@ export default function Search() {
       </div>
 
       {isOpen && results.length > 0 && (
-        <div className="absolute top-full mt-2 left-0 right-0 bg-zinc-900 border border-white/10 rounded-xl overflow-hidden shadow-2xl z-[100] backdrop-blur-xl">
+        <div className="absolute top-full mt-2 left-0 right-0 bg-card-bg border border-white/5 rounded-xl overflow-hidden shadow-2xl z-[100] backdrop-blur-xl">
           {results.map((item) => (
             <button
               key={item.id}
               onClick={() => handleSelect(item)}
-              className="w-full flex items-center gap-3 p-3 hover:bg-white/5 transition-colors border-b border-white/5 last:border-0"
+              className="w-full flex items-center gap-3 p-3 hover:bg-primary/10 transition-colors border-b border-white/5 last:border-0"
             >
               <img 
-                src={item.poster_path ? `https://image.tmdb.org/t/p/w92${item.poster_path}` : "/favicon.ico"} 
+                src={item.poster_path ? `/t/p/w500${item.poster_path}` : "/favicon.ico"} 
                 alt={item.title || item.name}
                 className="w-10 h-14 object-cover rounded shadow"
               />

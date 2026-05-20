@@ -1,6 +1,6 @@
 export const TMDB_API_KEY = "882e741f7283dc9ba1654d4692ec30f6";
 export const BASE_URL = "https://api.themoviedb.org/3";
-export const IMAGE_BASE_URL = "https://tomito.xyz/t/p/w500";
+export const IMAGE_BASE_URL = "/t/p/w500";
 
 export async function getTMDBData(endpoint: string, params: Record<string, string> = {}) {
   const url = new URL(`${BASE_URL}/${endpoint}`);

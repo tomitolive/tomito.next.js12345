@@ -4,16 +4,18 @@ import { getLocalContent } from "@/lib/content";
 import { notFound } from "next/navigation";
 
 interface Props {
-  params: { slug: string };
+  params: Promise<{ slug: string }>;
 }
 
 function parseId(slug: string) {
+  if (!slug) return null;
   const match = slug.match(/^(\d+)/);
   return match ? match[1] : null;
 }
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
-  const id = parseId(params.slug);
+  const { slug } = await params;
+  const id = parseId(slug);
   if (!id) return { title: "مسلسل غير موجود" };
 
   const local = await getLocalContent(id);
@@ -35,7 +37,8 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 }
 
 export default async function TVPage({ params }: Props) {
-  const id = parseId(params.slug);
+  const { slug } = await params;
+  const id = parseId(slug);
   if (!id) notFound();
 
   const local = await getLocalContent(id);
@@ -52,10 +55,10 @@ export default async function TVPage({ params }: Props) {
   const rating = data.vote_average?.toFixed(1);
   const genres = data.genres?.map((g: any) => g.name).join(" • ");
   const backdrop = data.backdrop_path ? `https://image.tmdb.org/t/p/original${data.backdrop_path}` : "";
-  const poster = data.poster_path ? `https://image.tmdb.org/t/p/w500${data.poster_path}` : "";
+  const poster = data.poster_path ? `/t/p/w500${data.poster_path}` : (data.poster ? data.poster.replace('https://image.tmdb.org/t/p/w500', '/t/p/w500') : "");
 
   return (
-    <div className="relative min-h-screen bg-black">
+    <div className="relative min-h-screen bg-background">
       {/* Hero Section */}
       <div className="relative h-[70vh] w-full overflow-hidden">
         <div 
@@ -65,23 +68,32 @@ export default async function TVPage({ params }: Props) {
         <div className="absolute inset-0 bg-gradient-to-t from-black via-black/40 to-transparent" />
         <div className="absolute inset-0 bg-gradient-to-r from-black via-black/20 to-transparent" />
         
-        <div className="relative h-full flex flex-col justify-end px-6 pb-12 md:px-12 md:pb-24 max-w-4xl fade-in">
+        <div className="relative h-full flex flex-col justify-end px-6 pb-12 md:px-12 md:pb-24 max-w-4xl fade-in-up">
           <h1 className="text-4xl md:text-7xl font-bold font-heading mb-4 leading-tight">
             {title}
           </h1>
-          <div className="flex items-center gap-4 text-sm md:text-lg mb-6 font-medium text-gray-300">
-            <span className="text-green-500 font-bold">{rating} ⭐</span>
+          <div className="flex items-center gap-4 text-sm md:text-lg mb-6 font-medium text-gray-400">
+            <span className="rating-badge">
+              <span className="text-[10px] sm:text-xs">⭐</span>
+              {rating}
+            </span>
             <span>{year}</span>
-            <span className="border border-white/40 px-2 py-0.5 rounded text-xs">TV Series</span>
-            <span className="hidden sm:inline">{genres}</span>
+            <span className="border border-white/20 px-2 py-0.5 rounded text-xs uppercase tracking-wider">TV Series</span>
+            <span className="hidden sm:inline border-r border-white/10 pr-4">{genres}</span>
           </div>
           <p className="text-sm md:text-xl text-gray-200 line-clamp-3 mb-8 max-w-2xl leading-relaxed">
             {data.overview}
           </p>
           <div className="flex flex-wrap gap-4">
-            <button className="bg-red-primary text-white px-8 py-3 rounded-md font-bold flex items-center gap-2 hover:bg-red-700 transition-colors">
-              <span>▶</span> شاهد جميع الحلقات
-            </button>
+            <a 
+              href={`https://tv.tomito.xyz/tv/${slug}`}
+              className="btn-primary"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+              <span>مشاهدة جميع الحلقات</span>
+            </a>
           </div>
         </div>
       </div>
@@ -90,7 +102,7 @@ export default async function TVPage({ params }: Props) {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-12">
           <div className="md:col-span-3 space-y-12">
             <section>
-              <h2 className="text-2xl font-bold font-heading mb-6 border-r-4 border-red-primary pr-4">القصة</h2>
+              <h2 className="text-2xl font-bold font-heading mb-6 border-r-4 border-primary pr-4">القصة</h2>
               <p className="text-gray-300 text-lg leading-loose">
                 {data.overview}
               </p>
@@ -98,13 +110,13 @@ export default async function TVPage({ params }: Props) {
             
             {/* Seasons Info */}
             <section>
-              <h2 className="text-2xl font-bold font-heading mb-6 border-r-4 border-red-primary pr-4">المواسم ({data.number_of_seasons})</h2>
+              <h2 className="text-2xl font-bold font-heading mb-6 border-r-4 border-primary pr-4">المواسم ({data.number_of_seasons})</h2>
               <div className="grid grid-cols-2 sm:grid-cols-4 gap-4">
                  {data.seasons?.map((season: any) => (
-                    <div key={season.id} className="bg-zinc-900 border border-white/5 rounded-lg overflow-hidden group">
-                       <img src={season.poster_path ? `https://image.tmdb.org/t/p/w200${season.poster_path}` : poster} alt={season.name} className="w-full aspect-[2/3] object-cover" />
-                       <div className="p-3">
-                          <h4 className="text-sm font-bold truncate">{season.name}</h4>
+                    <div key={season.id} className="episode-card group overflow-hidden">
+                       <img src={season.poster_path ? `https://image.tmdb.org/t/p/w200${season.poster_path}` : poster} alt={season.name} className="w-full aspect-[2/3] object-cover transition-transform duration-500 group-hover:scale-105" />
+                       <div className="p-3 border-t border-white/5">
+                          <h4 className="text-sm font-bold truncate group-hover:text-primary transition-colors">{season.name}</h4>
                           <p className="text-xs text-gray-500">{season.episode_count} حلقة</p>
                        </div>
                     </div>

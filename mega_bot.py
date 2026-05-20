@@ -46,7 +46,7 @@ except ImportError:
 
 # --- Configuration ---
 BASE_PATH = os.path.dirname(os.path.abspath(__file__))
-DIRS = ['movie', 'tv', 'movie-trend', 'tv-trend', 'data', 't/p/w500']
+DIRS = ['movie', 'tv', 'movie-trend', 'tv-trend', 'data', 'public/t/p/w500']
 for d in DIRS:
     os.makedirs(os.path.join(BASE_PATH, d), exist_ok=True)
 
@@ -56,7 +56,7 @@ BASE_URL = "https://api.themoviedb.org/3"
 # Use localized image domain
 # TMDB original: https://image.tmdb.org/t/p/w500
 # Mirror target: https://tomito.xyz/t/p/w500
-IMAGE_BASE_URL = "https://tomito.xyz/t/p/w500"
+IMAGE_BASE_URL = "/t/p/w500"
 SITE_URL = "https://tomito.xyz"
 BUTTON_DOMAIN = "https://tv.tomito.xyz"
 
@@ -322,7 +322,7 @@ def download_tmdb_image(tmdb_poster_path):
     """Downloads poster from TMDB to local t/p/w500 folder."""
     if not tmdb_poster_path: return None
     filename = tmdb_poster_path.lstrip('/')
-    local_dir = os.path.join(BASE_PATH, 't', 'p', 'w500')
+    local_dir = os.path.join(BASE_PATH, 'public', 't', 'p', 'w500')
     local_path = os.path.join(local_dir, filename)
     
     if os.path.exists(local_path):

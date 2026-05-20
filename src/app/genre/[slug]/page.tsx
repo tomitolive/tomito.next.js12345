@@ -42,7 +42,8 @@ const GENRE_AR: Record<string, string> = {
 };
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
-  const genreName = GENRE_AR[params.slug] || params.slug;
+  const { slug } = await params;
+  const genreName = GENRE_AR[slug] || slug;
   return {
     title: `أفلام ومسلسلات ${genreName} — توميتو`,
     description: `مشاهدة وتحميل أفضل أفلام ومسلسلات ${genreName} مترجمة باحترافية وبدون إعلانات.`,
@@ -50,7 +51,8 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 }
 
 export default async function GenrePage({ params }: Props) {
-  const genreId = GENRE_MAP[params.slug];
+  const { slug } = await params;
+  const genreId = GENRE_MAP[slug];
   if (!genreId) notFound();
 
   const movies = await getTMDBData("discover/movie", { with_genres: genreId.toString(), language: "ar" });
@@ -61,7 +63,7 @@ export default async function GenrePage({ params }: Props) {
     ...(tv?.results || []).map((t: any) => ({ ...t, media_type: 'tv' }))
   ].sort((a, b) => b.vote_average - a.vote_average);
 
-  const genreName = GENRE_AR[params.slug] || params.slug;
+  const genreName = GENRE_AR[slug] || slug;
 
   return (
     <div className="bg-black min-h-screen pt-24 px-6 md:px-12 pb-24">
@@ -89,7 +91,7 @@ export default async function GenrePage({ params }: Props) {
             >
               <div className="relative aspect-[2/3] rounded-lg overflow-hidden bg-zinc-900 border border-white/5 shadow-lg">
                 <img 
-                  src={`https://image.tmdb.org/t/p/w400${item.poster_path}`} 
+                  src={`/t/p/w500${item.poster_path}`} 
                   alt={title} 
                   className="w-full h-full object-cover" 
                   loading="lazy"

@@ -26,7 +26,7 @@ def get_url(folder, slug, root="./"):
 def card_html(item, root="./"):
     poster_tmdb = item.get('poster', '')
     filename = poster_tmdb.split('/')[-1] if poster_tmdb else ''
-    local_rel_path = f"t/p/w500/{filename}"
+    local_rel_path = f"public/t/p/w500/{filename}"
     local_abs_path = os.path.join(BASE_PATH, local_rel_path)
     
     if filename and os.path.exists(local_abs_path):
@@ -56,7 +56,7 @@ def build_mini_carousel(section_id, title_ar, items, view_all_url, count=20):
         href   = get_url(folder, slug)
         poster_tmdb = item.get('poster', '')
         filename = poster_tmdb.split('/')[-1] if poster_tmdb else ''
-        local_rel_path = f"t/p/w500/{filename}"
+        local_rel_path = f"public/t/p/w500/{filename}"
         local_abs_path = os.path.join(BASE_PATH, local_rel_path)
         
         if filename and os.path.exists(local_abs_path):
@@ -95,7 +95,7 @@ def build_carousel(trends):
         href = get_url(folder, slug)
         poster_tmdb = item.get('poster', '')
         filename = poster_tmdb.split('/')[-1] if poster_tmdb else ''
-        local_rel_path = f"t/p/w500/{filename}"
+        local_rel_path = f"public/t/p/w500/{filename}"
         local_abs_path = os.path.join(BASE_PATH, local_rel_path)
         
         if filename and os.path.exists(local_abs_path):

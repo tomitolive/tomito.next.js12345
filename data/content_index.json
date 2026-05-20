@@ -25423,5 +25423,95 @@
       16
     ],
     "timestamp": 1779302899
+  },
+  {
+    "title": "برلين ولوحة ليوناردو دا فينشي / Berlin and the Lady with an Ermine",
+    "title_ar": "برلين ولوحة ليوناردو دا فينشي",
+    "title_en": "Berlin and the Lady with an Ermine",
+    "slug": "308014-berlin-and-the-lady-with-an-ermine",
+    "folder": "tv",
+    "poster": "/t/p/w500/3uhJ3AHKxSsEWe1BUG9pV0bpqna.jpg",
+    "rating": 8.2,
+    "year": "2026",
+    "type": "tv",
+    "tmdb_id": 308014,
+    "genre_ids": [
+      18,
+      80
+    ],
+    "timestamp": 1779310048
+  },
+  {
+    "title": "The Greed of Man / The Greed of Man",
+    "title_ar": "The Greed of Man",
+    "title_en": "The Greed of Man",
+    "slug": "20382-the-greed-of-man",
+    "folder": "tv",
+    "poster": "/t/p/w500/ib3bGoQojw1YaSv902xjcZ9SXOL.jpg",
+    "rating": 7.9,
+    "year": "1992",
+    "type": "tv",
+    "tmdb_id": 20382,
+    "genre_ids": [
+      18
+    ],
+    "timestamp": 1779310051
+  },
+  {
+    "title": "7 / Seven Detectives",
+    "title_ar": "7",
+    "title_en": "Seven Detectives",
+    "slug": "84574-seven-detectives",
+    "folder": "tv",
+    "poster": "/t/p/w500/j2y2rn7ZowoPrOqzAJwUlIIg9qk.jpg",
+    "rating": 7.4,
+    "year": "2015",
+    "type": "tv",
+    "tmdb_id": 84574,
+    "genre_ids": [
+      80,
+      18,
+      9648
+    ],
+    "timestamp": 1779310056
+  },
+  {
+    "title": "عائلة كرود عصر جديد / The Croods: A New Age",
+    "title_ar": "عائلة كرود عصر جديد",
+    "title_en": "The Croods: A New Age",
+    "slug": "529203-the-croods-a-new-age",
+    "folder": "movie",
+    "poster": "/t/p/w500/k6F13uEkqJe0i3eza2NUQZcEdv4.jpg",
+    "rating": 7.4,
+    "year": "2020",
+    "type": "movie",
+    "tmdb_id": 529203,
+    "genre_ids": [
+      16,
+      10751,
+      12,
+      14,
+      35
+    ],
+    "timestamp": 1779310060
+  },
+  {
+    "title": "دكتور ستون / Dr. STONE",
+    "title_ar": "دكتور ستون",
+    "title_en": "Dr. STONE",
+    "slug": "86031-dr-stone",
+    "folder": "tv",
+    "poster": "/t/p/w500/fxmigTNZHRfBQ7h13vs8K5H5f77.jpg",
+    "rating": 8.5,
+    "year": "2019",
+    "type": "tv",
+    "tmdb_id": 86031,
+    "genre_ids": [
+      16,
+      10759,
+      35,
+      10765
+    ],
+    "timestamp": 1779310064
   }
 ]
