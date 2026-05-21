@@ -1,0 +1,37 @@
+{
+  "id": 268,
+  "title": "Batman",
+  "title_ar": "Batman",
+  "title_en": "Batman",
+  "slug": "268-batman",
+  "overview": "",
+  "poster_path": "/lJggdmBxq9CTs8itC5zwyo7ZMBr.jpg",
+  "backdrop_path": "/rBN6GPKUDZ6ZKAQiEZegZ0DZb6V.jpg",
+  "release_date": "1989-06-21",
+  "vote_average": 7.2,
+  "vote_count": 8547,
+  "genres": [
+    {
+      "id": 14,
+      "name": "فانتازيا"
+    },
+    {
+      "id": 28,
+      "name": "حركة"
+    },
+    {
+      "id": 80,
+      "name": "جريمة"
+    }
+  ],
+  "ai_content": {
+    "intro": "",
+    "desc_ar": "مشاهدة وتحميل فيلم Batman مترجم بجودة عالية.",
+    "meta_desc": "مشاهدة Batman (1989) مترجم اون لاين بجودة عالية HD حصريا على توميتو.",
+    "outro": "",
+    "opinion": "رأي توميتو: Batman عمل سينمائي يستحق الاستكشاف والمتابعة.",
+    "faq": [],
+    "keywords": "Batman مترجم, مشاهدة Batman 1989, توميتو Batman, أحداث Batman بالتفصيل, قصة فيلم Batman"
+  },
+  "fixed": true
+}
