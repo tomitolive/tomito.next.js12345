@@ -1,0 +1,37 @@
+{
+  "id": 873,
+  "title": "Columbo",
+  "title_ar": "Columbo",
+  "title_en": "Columbo",
+  "slug": "873-columbo",
+  "overview": "",
+  "poster_path": "/2JCD8vab3fircOU8cM2HJCxfv4I.jpg",
+  "backdrop_path": "/8xr2imLUMyvIybraMOq4umBl6nz.jpg",
+  "release_date": "1971-09-15",
+  "vote_average": 8.1,
+  "vote_count": 819,
+  "genres": [
+    {
+      "id": 80,
+      "name": "جريمة"
+    },
+    {
+      "id": 18,
+      "name": "دراما"
+    },
+    {
+      "id": 9648,
+      "name": "غموض"
+    }
+  ],
+  "ai_content": {
+    "intro": "",
+    "desc_ar": "مشاهدة وتحميل مسلسل Columbo مترجم بجودة عالية.",
+    "meta_desc": "مشاهدة Columbo (1971) مترجم اون لاين بجودة عالية HD حصريا على توميتو.",
+    "outro": "",
+    "opinion": "رأي توميتو: Columbo عمل سينمائي يستحق الاستكشاف والمتابعة.",
+    "faq": [],
+    "keywords": "قصة مسلسل Columbo, مشاهدة Columbo 1971, Columbo مترجم كامل, أحداث Columbo بالتفصيل, توميتو Columbo"
+  },
+  "fixed": true
+}
