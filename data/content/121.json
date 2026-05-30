@@ -1,0 +1,37 @@
+{
+  "id": 121,
+  "title": "Doctor Who",
+  "title_ar": "Doctor Who",
+  "title_en": "Doctor Who",
+  "slug": "121-doctor-who",
+  "overview": "",
+  "poster_path": "/xinqAmYrZ1TEwowcQhgTkZVtVE0.jpg",
+  "backdrop_path": "/8VWgyQjExeMgeg6Qzv6agduMU1A.jpg",
+  "release_date": "1963-11-23",
+  "vote_average": 7.9,
+  "vote_count": 696,
+  "genres": [
+    {
+      "id": 18,
+      "name": "دراما"
+    },
+    {
+      "id": 10759,
+      "name": "حركة ومغامرة"
+    },
+    {
+      "id": 10765,
+      "name": "خيال علمي وفانتازيا"
+    }
+  ],
+  "ai_content": {
+    "intro": "",
+    "desc_ar": "مشاهدة وتحميل مسلسل Doctor Who مترجم بجودة عالية.",
+    "meta_desc": "مشاهدة Doctor Who (1963) مترجم اون لاين بجودة عالية HD حصريا على توميتو.",
+    "outro": "",
+    "opinion": "رأي توميتو: Doctor Who عمل سينمائي يستحق الاستكشاف والمتابعة.",
+    "faq": [],
+    "keywords": "توميتو Doctor Who, مشاهدة Doctor Who 1963, أحداث Doctor Who بالتفصيل, قصة مسلسل Doctor Who, Doctor Who مترجم كامل"
+  },
+  "fixed": true
+}
