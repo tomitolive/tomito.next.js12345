@@ -1,0 +1,37 @@
+{
+  "id": 40,
+  "title": "Dallas",
+  "title_ar": "Dallas",
+  "title_en": "Dallas",
+  "slug": "40-dallas",
+  "overview": "",
+  "poster_path": "/A1dupjBm7rXqBw2Dbz9WUsHoyxo.jpg",
+  "backdrop_path": "/5Z40OJgNeedcAgqPRTGQzlk17Mv.jpg",
+  "release_date": "1978-04-02",
+  "vote_average": 6.8,
+  "vote_count": 235,
+  "genres": [
+    {
+      "id": 10766,
+      "name": "أوبرا صابونية"
+    },
+    {
+      "id": 18,
+      "name": "دراما"
+    },
+    {
+      "id": 10751,
+      "name": "عائلي"
+    }
+  ],
+  "ai_content": {
+    "intro": "",
+    "desc_ar": "مشاهدة وتحميل مسلسل Dallas مترجم بجودة عالية.",
+    "meta_desc": "مشاهدة Dallas (1978) مترجم اون لاين بجودة عالية HD حصريا على توميتو.",
+    "outro": "",
+    "opinion": "رأي توميتو: Dallas عمل سينمائي يستحق الاستكشاف والمتابعة.",
+    "faq": [],
+    "keywords": "Dallas مترجم كامل, مشاهدة Dallas 1978, أحداث Dallas بالتفصيل, توميتو Dallas, قصة مسلسل Dallas"
+  },
+  "fixed": true
+}
